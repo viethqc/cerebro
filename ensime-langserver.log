@@ -1,0 +1,917 @@
+[2019-07-24 22:39:33,334] INFO org.github.dragos.vscode.Main$ - Starting server in /home/viethq/Desktop/github/cerebro
+[2019-07-24 22:39:33,334] INFO org.github.dragos.vscode.Main$ - Starting server in /home/viethq/Desktop/github/cerebro
+[2019-07-24 22:39:33,354] INFO org.github.dragos.vscode.Main$ - Classpath: /home/viethq/.vscode/extensions/dragos.scala-lsp-0.2.3/coursier
+[2019-07-24 22:39:33,354] INFO org.github.dragos.vscode.Main$ - Classpath: /home/viethq/.vscode/extensions/dragos.scala-lsp-0.2.3/coursier
+[2019-07-24 22:39:33,544] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 1199
+[2019-07-24 22:39:33,544] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 1199
+[2019-07-24 22:39:33,573] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":14007,"rootPath":"/home/viethq/Desktop/github/cerebro","rootUri":"file:///home/viethq/Desktop/github/cerebro","capabilities":{"workspace":{"applyEdit":true,"didChangeConfiguration":{"dynamicRegistration":false},"didChangeWatchedFiles":{"dynamicRegistration":false},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true}},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true}},"hover":{"dynamicRegistration":true},"signatureHelp":{"dynamicRegistration":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"dynamicRegistration":true},"codeAction":{"dynamicRegistration":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true}}},"trace":"off"}}
+[2019-07-24 22:39:33,573] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":14007,"rootPath":"/home/viethq/Desktop/github/cerebro","rootUri":"file:///home/viethq/Desktop/github/cerebro","capabilities":{"workspace":{"applyEdit":true,"didChangeConfiguration":{"dynamicRegistration":false},"didChangeWatchedFiles":{"dynamicRegistration":false},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true}},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true}},"hover":{"dynamicRegistration":true},"signatureHelp":{"dynamicRegistration":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"dynamicRegistration":true},"codeAction":{"dynamicRegistration":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true}}},"trace":"off"}}
+[2019-07-24 22:39:34,246] INFO org.github.dragos.vscode.EnsimeLanguageServer - Initialized with 14007, /home/viethq/Desktop/github/cerebro, ClientCapabilities()
+[2019-07-24 22:39:34,246] INFO org.github.dragos.vscode.EnsimeLanguageServer - Initialized with 14007, /home/viethq/Desktop/github/cerebro, ClientCapabilities()
+[2019-07-24 22:39:34,250] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - ensime.config = "/home/viethq/Desktop/github/cerebro/.ensime" 
+[2019-07-24 22:39:34,250] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - ensime.config = "/home/viethq/Desktop/github/cerebro/.ensime" 
+[2019-07-24 22:39:35,022] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[2019-07-24 22:39:35,220] ERROR org.github.dragos.vscode.EnsimeLanguageServer - initializeEnsime Error: /home/viethq/Desktop/github/cerebro/.ensime
+[2019-07-24 22:39:35,220] ERROR org.github.dragos.vscode.EnsimeLanguageServer - initializeEnsime Error: /home/viethq/Desktop/github/cerebro/.ensime
+[2019-07-24 22:39:35,321] DEBUG langserver.core.MessageWriter - Content-Length: 146
+
+
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"tpe":1,"message":"No .ensime file in directory. Run `sbt ensimeConfig` to create one."}}
+[2019-07-24 22:39:35,321] DEBUG langserver.core.MessageWriter - Content-Length: 146
+
+
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"tpe":1,"message":"No .ensime file in directory. Run `sbt ensimeConfig` to create one."}}
+[2019-07-24 22:39:35,322] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","method":"window/showMessage","params":{"tpe":1,"message":"No .ensime file in directory. Run `sbt ensimeConfig` to create one."}}
+[2019-07-24 22:39:35,322] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","method":"window/showMessage","params":{"tpe":1,"message":"No .ensime file in directory. Run `sbt ensimeConfig` to create one."}}
+[2019-07-24 22:39:35,458] DEBUG langserver.core.MessageWriter - Content-Length: 441
+
+
+
+{"jsonrpc":"2.0","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":["."]},"definitionProvider":true,"referencesProvider":false,"documentHighlightProvider":false,"documentSymbolProvider":true,"workspaceSymbolProvider":false,"codeActionProvider":false,"documentFormattingProvider":false,"documentRangeFormattingProvider":false,"renameProvider":false}},"id":0}
+[2019-07-24 22:39:35,458] DEBUG langserver.core.MessageWriter - Content-Length: 441
+
+
+
+{"jsonrpc":"2.0","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":["."]},"definitionProvider":true,"referencesProvider":false,"documentHighlightProvider":false,"documentSymbolProvider":true,"workspaceSymbolProvider":false,"codeActionProvider":false,"documentFormattingProvider":false,"documentRangeFormattingProvider":false,"renameProvider":false}},"id":0}
+[2019-07-24 22:39:35,460] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":["."]},"definitionProvider":true,"referencesProvider":false,"documentHighlightProvider":false,"documentSymbolProvider":true,"workspaceSymbolProvider":false,"codeActionProvider":false,"documentFormattingProvider":false,"documentRangeFormattingProvider":false,"renameProvider":false}},"id":0}
+[2019-07-24 22:39:35,460] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"completionProvider":{"resolveProvider":false,"triggerCharacters":["."]},"definitionProvider":true,"referencesProvider":false,"documentHighlightProvider":false,"documentSymbolProvider":true,"workspaceSymbolProvider":false,"codeActionProvider":false,"documentFormattingProvider":false,"documentRangeFormattingProvider":false,"renameProvider":false}},"id":0}
+[2019-07-24 22:39:35,467] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 52
+[2019-07-24 22:39:35,467] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 52
+[2019-07-24 22:39:35,468] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"initialized","params":{}}
+[2019-07-24 22:39:35,468] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"initialized","params":{}}
+[2019-07-24 22:39:35,506] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification Initialized()
+[2019-07-24 22:39:35,506] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification Initialized()
+[2019-07-24 22:39:35,512] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3027
+[2019-07-24 22:39:35,512] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3027
+[2019-07-24 22:39:35,525] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/RestController.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport java.sql.Date\nimport java.text.SimpleDateFormat\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport dao.{DAOException, RestHistoryDAO, RestRequest}\nimport elastic.{ElasticClient, Error, Success}\nimport models.{CerebroResponse, ClusterMapping, Hosts}\nimport play.api.libs.json.{JsArray, JsString, Json}\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.util.Try\nimport scala.util.control.NonFatal\nimport play.api.Logger\n\nclass RestController @Inject()(val authentication: AuthenticationModule,\n                               val hosts: Hosts,\n                               client: ElasticClient,\n                               restHistoryDAO: RestHistoryDAO) extends BaseController {\n\n  private val logger = Logger(\"application\")\n\n  def request = process { request =>\n    val method = request.get(\"method\")\n    val path = request.get(\"path\")\n    val body = request.getObjOpt(\"data\")\n    client.executeRequest(method, path, body, request.target).map {\n      case s: Success =>\n        val bodyAsString = body.map {\n          case JsString(str) => str\n          case other => other.toString()\n        }.getOrElse(\"{}\")\n        val username = request.user.map(_.name).getOrElse(\"\")\n        Try(restHistoryDAO.save(RestRequest(path, method, bodyAsString, username, new Date(System.currentTimeMillis)))).recover {\n          case DAOException(msg, e) => logger.error(msg, e)\n        }\n        CerebroResponse(s.status, s.body)\n\n      case e: Error => CerebroResponse(e.status, e.body)\n    }\n  }\n\n  def index = process { request =>\n    client.getClusterMapping(request.target).map {\n      case Success(status, body) =>\n        val data = Json.obj(\n          \"mappings\" -> ClusterMapping(body),\n          \"host\"    -> request.target.host.name\n        )\n        CerebroResponse(status, data)\n\n      case Error(status, error) =>\n        CerebroResponse(status, error)\n    }\n  }\n\n  def history = process { request =>\n    implicit val writes = Json.writes[RestRequest]\n    val dateFormat = new SimpleDateFormat(\"dd/MM HH:mm:ss\")\n    restHistoryDAO.all(request.user.map(_.name).getOrElse(\"\")).map {\n      case requests =>\n        val body = requests.map { request =>\n          Json.obj(\n            \"path\" -> JsString(request.path),\n            \"method\" -> JsString(request.method),\n            \"body\" -> JsString(request.body),\n            \"created_at\" -> JsString(dateFormat.format(request.createdAt))\n          )\n        }\n        CerebroResponse(200, JsArray(body))\n    }.recover {\n      case NonFatal(e) =>\n        CerebroResponse(500, Json.obj(\"Error\" -> JsString(s\"Error while loading requests history: ${e.getMessage}\")))\n    }\n  }\n\n}\n"}}}
+[2019-07-24 22:39:35,525] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/RestController.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport java.sql.Date\nimport java.text.SimpleDateFormat\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport dao.{DAOException, RestHistoryDAO, RestRequest}\nimport elastic.{ElasticClient, Error, Success}\nimport models.{CerebroResponse, ClusterMapping, Hosts}\nimport play.api.libs.json.{JsArray, JsString, Json}\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.util.Try\nimport scala.util.control.NonFatal\nimport play.api.Logger\n\nclass RestController @Inject()(val authentication: AuthenticationModule,\n                               val hosts: Hosts,\n                               client: ElasticClient,\n                               restHistoryDAO: RestHistoryDAO) extends BaseController {\n\n  private val logger = Logger(\"application\")\n\n  def request = process { request =>\n    val method = request.get(\"method\")\n    val path = request.get(\"path\")\n    val body = request.getObjOpt(\"data\")\n    client.executeRequest(method, path, body, request.target).map {\n      case s: Success =>\n        val bodyAsString = body.map {\n          case JsString(str) => str\n          case other => other.toString()\n        }.getOrElse(\"{}\")\n        val username = request.user.map(_.name).getOrElse(\"\")\n        Try(restHistoryDAO.save(RestRequest(path, method, bodyAsString, username, new Date(System.currentTimeMillis)))).recover {\n          case DAOException(msg, e) => logger.error(msg, e)\n        }\n        CerebroResponse(s.status, s.body)\n\n      case e: Error => CerebroResponse(e.status, e.body)\n    }\n  }\n\n  def index = process { request =>\n    client.getClusterMapping(request.target).map {\n      case Success(status, body) =>\n        val data = Json.obj(\n          \"mappings\" -> ClusterMapping(body),\n          \"host\"    -> request.target.host.name\n        )\n        CerebroResponse(status, data)\n\n      case Error(status, error) =>\n        CerebroResponse(status, error)\n    }\n  }\n\n  def history = process { request =>\n    implicit val writes = Json.writes[RestRequest]\n    val dateFormat = new SimpleDateFormat(\"dd/MM HH:mm:ss\")\n    restHistoryDAO.all(request.user.map(_.name).getOrElse(\"\")).map {\n      case requests =>\n        val body = requests.map { request =>\n          Json.obj(\n            \"path\" -> JsString(request.path),\n            \"method\" -> JsString(request.method),\n            \"body\" -> JsString(request.body),\n            \"created_at\" -> JsString(dateFormat.format(request.createdAt))\n          )\n        }\n        CerebroResponse(200, JsArray(body))\n    }.recover {\n      case NonFatal(e) =>\n        CerebroResponse(500, Json.obj(\"Error\" -> JsString(s\"Error while loading requests history: ${e.getMessage}\")))\n    }\n  }\n\n}\n"}}}
+[2019-07-24 22:39:35,543] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3041
+[2019-07-24 22:39:35,543] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3041
+[2019-07-24 22:39:35,552] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala","languageId":"scala","version":2,"text":"package controllers\n\nimport java.sql.Date\nimport java.text.SimpleDateFormat\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport dao.{DAOException, RestHistoryDAO, RestRequest}\nimport elastic.{ElasticClient, Error, Success}\nimport models.{CerebroResponse, ClusterMapping, Hosts}\nimport play.api.libs.json.{JsArray, JsString, Json}\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.util.Try\nimport scala.util.control.NonFatal\nimport play.api.Logger\n\nclass StructQueryController @Inject()(val authentication: AuthenticationModule,\n                               val hosts: Hosts,\n                               client: ElasticClient,\n                               restHistoryDAO: RestHistoryDAO) extends BaseController {\n\n  private val logger = Logger(\"application\")\n\n  def request = process { request =>\n    val method = request.get(\"method\")\n    val path = request.get(\"path\")\n    val body = request.getObjOpt(\"data\")\n    client.executeRequest(method, path, body, request.target).map {\n      case s: Success =>\n        val bodyAsString = body.map {\n          case JsString(str) => str\n          case other => other.toString()\n        }.getOrElse(\"{}\")\n        val username = request.user.map(_.name).getOrElse(\"\")\n        Try(restHistoryDAO.save(RestRequest(path, method, bodyAsString, username, new Date(System.currentTimeMillis)))).recover {\n          case DAOException(msg, e) => logger.error(msg, e)\n        }\n        CerebroResponse(s.status, s.body)\n\n      case e: Error => CerebroResponse(e.status, e.body)\n    }\n  }\n\n  def index = process { request =>\n    client.getClusterMapping(request.target).map {\n      case Success(status, body) =>\n        val data = Json.obj(\n          \"mappings\" -> ClusterMapping(body),\n          \"host\"    -> request.target.host.name\n        )\n        CerebroResponse(status, data)\n\n      case Error(status, error) =>\n        CerebroResponse(status, error)\n    }\n  }\n\n  def history = process { request =>\n    implicit val writes = Json.writes[RestRequest]\n    val dateFormat = new SimpleDateFormat(\"dd/MM HH:mm:ss\")\n    restHistoryDAO.all(request.user.map(_.name).getOrElse(\"\")).map {\n      case requests =>\n        val body = requests.map { request =>\n          Json.obj(\n            \"path\" -> JsString(request.path),\n            \"method\" -> JsString(request.method),\n            \"body\" -> JsString(request.body),\n            \"created_at\" -> JsString(dateFormat.format(request.createdAt))\n          )\n        }\n        CerebroResponse(200, JsArray(body))\n    }.recover {\n      case NonFatal(e) =>\n        CerebroResponse(500, Json.obj(\"Error\" -> JsString(s\"Error while loading requests history: ${e.getMessage}\")))\n    }\n  }\n\n}\n"}}}
+[2019-07-24 22:39:35,552] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala","languageId":"scala","version":2,"text":"package controllers\n\nimport java.sql.Date\nimport java.text.SimpleDateFormat\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport dao.{DAOException, RestHistoryDAO, RestRequest}\nimport elastic.{ElasticClient, Error, Success}\nimport models.{CerebroResponse, ClusterMapping, Hosts}\nimport play.api.libs.json.{JsArray, JsString, Json}\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.util.Try\nimport scala.util.control.NonFatal\nimport play.api.Logger\n\nclass StructQueryController @Inject()(val authentication: AuthenticationModule,\n                               val hosts: Hosts,\n                               client: ElasticClient,\n                               restHistoryDAO: RestHistoryDAO) extends BaseController {\n\n  private val logger = Logger(\"application\")\n\n  def request = process { request =>\n    val method = request.get(\"method\")\n    val path = request.get(\"path\")\n    val body = request.getObjOpt(\"data\")\n    client.executeRequest(method, path, body, request.target).map {\n      case s: Success =>\n        val bodyAsString = body.map {\n          case JsString(str) => str\n          case other => other.toString()\n        }.getOrElse(\"{}\")\n        val username = request.user.map(_.name).getOrElse(\"\")\n        Try(restHistoryDAO.save(RestRequest(path, method, bodyAsString, username, new Date(System.currentTimeMillis)))).recover {\n          case DAOException(msg, e) => logger.error(msg, e)\n        }\n        CerebroResponse(s.status, s.body)\n\n      case e: Error => CerebroResponse(e.status, e.body)\n    }\n  }\n\n  def index = process { request =>\n    client.getClusterMapping(request.target).map {\n      case Success(status, body) =>\n        val data = Json.obj(\n          \"mappings\" -> ClusterMapping(body),\n          \"host\"    -> request.target.host.name\n        )\n        CerebroResponse(status, data)\n\n      case Error(status, error) =>\n        CerebroResponse(status, error)\n    }\n  }\n\n  def history = process { request =>\n    implicit val writes = Json.writes[RestRequest]\n    val dateFormat = new SimpleDateFormat(\"dd/MM HH:mm:ss\")\n    restHistoryDAO.all(request.user.map(_.name).getOrElse(\"\")).map {\n      case requests =>\n        val body = requests.map { request =>\n          Json.obj(\n            \"path\" -> JsString(request.path),\n            \"method\" -> JsString(request.method),\n            \"body\" -> JsString(request.body),\n            \"created_at\" -> JsString(dateFormat.format(request.createdAt))\n          )\n        }\n        CerebroResponse(200, JsArray(body))\n    }.recover {\n      case NonFatal(e) =>\n        CerebroResponse(500, Json.obj(\"Error\" -> JsString(s\"Error while loading requests history: ${e.getMessage}\")))\n    }\n  }\n\n}\n"}}}
+[2019-07-24 22:39:35,568] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 186
+[2019-07-24 22:39:35,568] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 186
+[2019-07-24 22:39:35,576] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":1,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala"}}}
+[2019-07-24 22:39:35,576] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":1,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala"}}}
+[2019-07-24 22:39:35,596] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":1}
+[2019-07-24 22:39:35,596] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":1}
+[2019-07-24 22:39:35,601] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":1}
+[2019-07-24 22:39:35,601] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":1}
+[2019-07-24 22:39:57,116] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 215
+[2019-07-24 22:39:57,116] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 215
+[2019-07-24 22:39:57,117] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":2,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala"},"position":{"line":34,"character":49}}}
+[2019-07-24 22:39:57,117] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":2,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/StructQueryController.scala"},"position":{"line":34,"character":49}}}
+[2019-07-24 22:39:57,121] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 49).
+[2019-07-24 22:39:57,121] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 49).
+[2019-07-24 22:39:57,139] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 22:39:57,139] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 22:39:57,141] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 22:39:57,141] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 22:39:58,301] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 22:39:58,301] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 22:39:58,302] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":2}}
+[2019-07-24 22:39:58,302] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":2}}
+[2019-07-24 22:39:58,308] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(2)
+[2019-07-24 22:39:58,308] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(2)
+[2019-07-24 22:43:02,321] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 179
+[2019-07-24 22:43:02,321] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 179
+[2019-07-24 22:43:02,323] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":3,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/RestController.scala"}}}
+[2019-07-24 22:43:02,323] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":3,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/RestController.scala"}}}
+[2019-07-24 22:43:02,329] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":3}
+[2019-07-24 22:43:02,329] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":3}
+[2019-07-24 22:43:02,329] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":3}
+[2019-07-24 22:43:02,329] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":3}
+[2019-07-24 23:12:19,032] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 2194
+[2019-07-24 23:12:19,032] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 2194
+[2019-07-24 23:12:19,036] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport elastic.Success\nimport models.{ElasticServer, Host}\nimport play.api.libs.json.Json\nimport play.api.test.FakeRequest\nimport play.api.test.Helpers._\n\nimport scala.concurrent.Future\n\nobject RestControllerSpec extends MockedServices {\n\n  def is =\n    s2\"\"\"\n    RestController should                               ${step(play.api.Play.start(application))}\n      invoke refreshIndex                               $executeRequest\n      should throw exception if method param is missing $missingMethod\n      should throw exception if path param is missing   $missingPath\n                                                         ${step(play.api.Play.stop(application))}\n      \"\"\"\n\n  def executeRequest = {\n    val expectedResponse = Json.parse(\n      \"\"\"\n        |{\n        |  \"_shards\": {\n        |    \"total\": 10,\n        |    \"successful\": 5,\n        |    \"failed\": 0\n        |  }\n        |}\n      \"\"\".stripMargin\n    )\n    val body = Json.obj(\"host\" -> \"somehost\", \"method\" -> \"GET\", \"path\" -> \"/someesapi\")\n    client.executeRequest(\"GET\", \"/someesapi\", None, ElasticServer(Host(\"somehost\", None))) returns Future.successful(Success(200, expectedResponse))\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 200, expectedResponse)\n  }\n\n  def missingPath = {\n    val body = Json.obj(\"host\" -> \"somehost\", \"method\" -> \"GET\")\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 400, Json.obj(\"error\" -> \"Missing required parameter path\"))\n  }\n\n  def missingMethod = {\n    val body = Json.obj(\"host\" -> \"somehost\", \"path\" -> \"GET\")\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 400, Json.obj(\"error\" -> \"Missing required parameter method\"))\n  }\n\n}\n"}}}
+[2019-07-24 23:12:19,036] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport elastic.Success\nimport models.{ElasticServer, Host}\nimport play.api.libs.json.Json\nimport play.api.test.FakeRequest\nimport play.api.test.Helpers._\n\nimport scala.concurrent.Future\n\nobject RestControllerSpec extends MockedServices {\n\n  def is =\n    s2\"\"\"\n    RestController should                               ${step(play.api.Play.start(application))}\n      invoke refreshIndex                               $executeRequest\n      should throw exception if method param is missing $missingMethod\n      should throw exception if path param is missing   $missingPath\n                                                         ${step(play.api.Play.stop(application))}\n      \"\"\"\n\n  def executeRequest = {\n    val expectedResponse = Json.parse(\n      \"\"\"\n        |{\n        |  \"_shards\": {\n        |    \"total\": 10,\n        |    \"successful\": 5,\n        |    \"failed\": 0\n        |  }\n        |}\n      \"\"\".stripMargin\n    )\n    val body = Json.obj(\"host\" -> \"somehost\", \"method\" -> \"GET\", \"path\" -> \"/someesapi\")\n    client.executeRequest(\"GET\", \"/someesapi\", None, ElasticServer(Host(\"somehost\", None))) returns Future.successful(Success(200, expectedResponse))\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 200, expectedResponse)\n  }\n\n  def missingPath = {\n    val body = Json.obj(\"host\" -> \"somehost\", \"method\" -> \"GET\")\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 400, Json.obj(\"error\" -> \"Missing required parameter path\"))\n  }\n\n  def missingMethod = {\n    val body = Json.obj(\"host\" -> \"somehost\", \"path\" -> \"GET\")\n    val response = route(application, FakeRequest(POST, \"/rest/request\").withBody(body)).get\n    ensure(response, 400, Json.obj(\"error\" -> \"Missing required parameter method\"))\n  }\n\n}\n"}}}
+[2019-07-24 23:12:19,041] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 184
+[2019-07-24 23:12:19,041] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 184
+[2019-07-24 23:12:19,042] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":4,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"}}}
+[2019-07-24 23:12:19,042] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":4,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"}}}
+[2019-07-24 23:12:19,044] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":4}
+[2019-07-24 23:12:19,044] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":4}
+[2019-07-24 23:12:19,044] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":4}
+[2019-07-24 23:12:19,044] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":4}
+[2019-07-24 23:12:22,379] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:22,379] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:22,380] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":5,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":33,"character":81}}}
+[2019-07-24 23:12:22,380] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":5,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":33,"character":81}}}
+[2019-07-24 23:12:22,382] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (33, 81).
+[2019-07-24 23:12:22,382] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (33, 81).
+[2019-07-24 23:12:22,384] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:22,384] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:22,384] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,384] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,384] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,384] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,384] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":5}}
+[2019-07-24 23:12:22,384] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":5}}
+[2019-07-24 23:12:22,387] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(5)
+[2019-07-24 23:12:22,387] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(5)
+[2019-07-24 23:12:22,935] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:22,935] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:22,937] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":6,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":34,"character":59}}}
+[2019-07-24 23:12:22,937] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":6,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":34,"character":59}}}
+[2019-07-24 23:12:22,940] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 59).
+[2019-07-24 23:12:22,940] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 59).
+[2019-07-24 23:12:22,942] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,942] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,942] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:22,942] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:23,486] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:23,486] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:23,487] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":6}}
+[2019-07-24 23:12:23,487] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":6}}
+[2019-07-24 23:12:23,491] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(6)
+[2019-07-24 23:12:23,491] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(6)
+[2019-07-24 23:12:23,836] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:23,836] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:12:23,837] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":7,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":34,"character":51}}}
+[2019-07-24 23:12:23,837] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":7,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/test/controllers/RestControllerSpec.scala"},"position":{"line":34,"character":51}}}
+[2019-07-24 23:12:23,839] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 51).
+[2019-07-24 23:12:23,839] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (34, 51).
+[2019-07-24 23:12:23,841] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:23,841] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:12:23,841] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:23,841] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:12:24,042] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:24,042] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:12:24,043] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":7}}
+[2019-07-24 23:12:24,043] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":7}}
+[2019-07-24 23:12:24,045] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(7)
+[2019-07-24 23:12:24,045] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(7)
+[2019-07-24 23:39:15,303] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3850
+[2019-07-24 23:39:15,303] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3850
+[2019-07-24 23:39:15,307] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport elastic.{ElasticClient, Error}\nimport models.overview.ClusterOverview\nimport models.{CerebroResponse, Hosts, ShardStats}\nimport services.overview.OverviewDataService\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.concurrent.Future\n\nclass ClusterOverviewController @Inject()(val authentication: AuthenticationModule,\n                                          val hosts: Hosts,\n                                          val service: OverviewDataService,\n                                          client: ElasticClient) extends BaseController {\n\n  def index = process { request =>\n    service.overview(request.target).map(CerebroResponse(200, _))\n  }\n\n  def disableShardAllocation = process { request =>\n    client.disableShardAllocation(request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def enableShardAllocation = process { request =>\n    client.enableShardAllocation(request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def closeIndices = process { request =>\n    client.closeIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def openIndices = process { request =>\n    client.openIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def forceMerge = process { request =>\n    client.forceMerge(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def clearIndexCache = process { request =>\n    client.clearIndexCache(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def refreshIndex = process { request =>\n    client.refreshIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def flushIndex = process { request =>\n    client.flushIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def deleteIndex = process { request =>\n    client.deleteIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def getShardStats = process { request =>\n    val index = request.get(\"index\")\n    val shard = request.getInt(\"shard\")\n    val node = request.get(\"node\")\n    Future.sequence(\n      Seq(\n        client.getShardStats(index, request.target),\n        client.getIndexRecovery(index, request.target)\n      )\n    ).map { responses =>\n      val failed = responses.find(_.isInstanceOf[Error])\n      failed match {\n        case None =>\n          val stats = responses(0).body\n          val recovery = responses(1).body\n          CerebroResponse(200, ShardStats(index, node, shard, stats, recovery))\n        case Some(f) =>\n          CerebroResponse(f.status, f.body)\n      }\n    }\n  }\n\n  def relocateShard = process { request =>\n    val index = request.get(\"index\")\n    val shard = request.getInt(\"shard\")\n    val from = request.get(\"from\")\n    val to = request.get(\"to\")\n    val server = request.target\n    client.relocateShard(shard, index, from, to, server).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n}\n"}}}
+[2019-07-24 23:39:15,307] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala","languageId":"scala","version":1,"text":"package controllers\n\nimport javax.inject.Inject\n\nimport controllers.auth.AuthenticationModule\nimport elastic.{ElasticClient, Error}\nimport models.overview.ClusterOverview\nimport models.{CerebroResponse, Hosts, ShardStats}\nimport services.overview.OverviewDataService\n\nimport scala.concurrent.ExecutionContext.Implicits.global\nimport scala.concurrent.Future\n\nclass ClusterOverviewController @Inject()(val authentication: AuthenticationModule,\n                                          val hosts: Hosts,\n                                          val service: OverviewDataService,\n                                          client: ElasticClient) extends BaseController {\n\n  def index = process { request =>\n    service.overview(request.target).map(CerebroResponse(200, _))\n  }\n\n  def disableShardAllocation = process { request =>\n    client.disableShardAllocation(request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def enableShardAllocation = process { request =>\n    client.enableShardAllocation(request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def closeIndices = process { request =>\n    client.closeIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def openIndices = process { request =>\n    client.openIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def forceMerge = process { request =>\n    client.forceMerge(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def clearIndexCache = process { request =>\n    client.clearIndexCache(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def refreshIndex = process { request =>\n    client.refreshIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def flushIndex = process { request =>\n    client.flushIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def deleteIndex = process { request =>\n    client.deleteIndex(request.get(\"indices\"), request.target).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n  def getShardStats = process { request =>\n    val index = request.get(\"index\")\n    val shard = request.getInt(\"shard\")\n    val node = request.get(\"node\")\n    Future.sequence(\n      Seq(\n        client.getShardStats(index, request.target),\n        client.getIndexRecovery(index, request.target)\n      )\n    ).map { responses =>\n      val failed = responses.find(_.isInstanceOf[Error])\n      failed match {\n        case None =>\n          val stats = responses(0).body\n          val recovery = responses(1).body\n          CerebroResponse(200, ShardStats(index, node, shard, stats, recovery))\n        case Some(f) =>\n          CerebroResponse(f.status, f.body)\n      }\n    }\n  }\n\n  def relocateShard = process { request =>\n    val index = request.get(\"index\")\n    val shard = request.getInt(\"shard\")\n    val from = request.get(\"from\")\n    val to = request.get(\"to\")\n    val server = request.target\n    client.relocateShard(shard, index, from, to, server).map { response =>\n      CerebroResponse(response.status, response.body)\n    }\n  }\n\n}\n"}}}
+[2019-07-24 23:39:15,312] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 190
+[2019-07-24 23:39:15,312] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 190
+[2019-07-24 23:39:15,313] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":8,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"}}}
+[2019-07-24 23:39:15,313] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":8,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"}}}
+[2019-07-24 23:39:15,315] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":8}
+[2019-07-24 23:39:15,315] DEBUG langserver.core.MessageWriter - Content-Length: 36
+
+
+
+{"jsonrpc":"2.0","result":[],"id":8}
+[2019-07-24 23:39:15,316] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":8}
+[2019-07-24 23:39:15,316] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":8}
+[2019-07-24 23:39:40,701] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 218
+[2019-07-24 23:39:40,701] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 218
+[2019-07-24 23:39:40,702] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":9,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":7}}}
+[2019-07-24 23:39:40,702] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":9,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":7}}}
+[2019-07-24 23:39:40,703] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 7).
+[2019-07-24 23:39:40,703] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 7).
+[2019-07-24 23:39:40,704] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:40,704] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:40,705] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:40,705] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:40,865] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:39:40,865] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 62
+[2019-07-24 23:39:40,867] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":9}}
+[2019-07-24 23:39:40,867] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":9}}
+[2019-07-24 23:39:40,869] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(9)
+[2019-07-24 23:39:40,869] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(9)
+[2019-07-24 23:39:41,720] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 219
+[2019-07-24 23:39:41,720] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 219
+[2019-07-24 23:39:41,722] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":10,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":8}}}
+[2019-07-24 23:39:41,722] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":10,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":8}}}
+[2019-07-24 23:39:41,725] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 8).
+[2019-07-24 23:39:41,725] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 8).
+[2019-07-24 23:39:41,726] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:41,726] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:41,727] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:41,727] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:42,786] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:42,786] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:42,787] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":10}}
+[2019-07-24 23:39:42,787] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":10}}
+[2019-07-24 23:39:42,790] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(10)
+[2019-07-24 23:39:42,790] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(10)
+[2019-07-24 23:39:43,038] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 219
+[2019-07-24 23:39:43,038] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 219
+[2019-07-24 23:39:43,039] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":11,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":9}}}
+[2019-07-24 23:39:43,039] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":11,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":9}}}
+[2019-07-24 23:39:43,042] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 9).
+[2019-07-24 23:39:43,042] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 9).
+[2019-07-24 23:39:43,043] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:43,043] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:43,046] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:43,046] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:43,647] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:43,647] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:43,648] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":11}}
+[2019-07-24 23:39:43,648] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":11}}
+[2019-07-24 23:39:43,653] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(11)
+[2019-07-24 23:39:43,653] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(11)
+[2019-07-24 23:39:43,997] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:43,997] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:43,999] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":12,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":11}}}
+[2019-07-24 23:39:43,999] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":12,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":11}}}
+[2019-07-24 23:39:44,002] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 11).
+[2019-07-24 23:39:44,002] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 11).
+[2019-07-24 23:39:44,004] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,004] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,004] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,004] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,048] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:44,048] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:44,048] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":12}}
+[2019-07-24 23:39:44,048] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":12}}
+[2019-07-24 23:39:44,051] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(12)
+[2019-07-24 23:39:44,051] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(12)
+[2019-07-24 23:39:44,398] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:44,398] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:44,399] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":13,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:44,399] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":13,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:44,403] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 18).
+[2019-07-24 23:39:44,403] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 18).
+[2019-07-24 23:39:44,404] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,404] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,404] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,404] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:44,995] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:44,995] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:44,996] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":13}}
+[2019-07-24 23:39:44,996] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":13}}
+[2019-07-24 23:39:45,000] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(13)
+[2019-07-24 23:39:45,000] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(13)
+[2019-07-24 23:39:45,146] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:45,146] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:45,147] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":14,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":19}}}
+[2019-07-24 23:39:45,147] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":14,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":19}}}
+[2019-07-24 23:39:45,150] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 19).
+[2019-07-24 23:39:45,150] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 19).
+[2019-07-24 23:39:45,151] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:45,151] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:45,151] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:45,151] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:45,235] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:45,235] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:45,236] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":14}}
+[2019-07-24 23:39:45,236] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":14}}
+[2019-07-24 23:39:45,239] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(14)
+[2019-07-24 23:39:45,239] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(14)
+[2019-07-24 23:39:49,540] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:49,540] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:49,542] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":15,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":26}}}
+[2019-07-24 23:39:49,542] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":15,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":26}}}
+[2019-07-24 23:39:49,544] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 26).
+[2019-07-24 23:39:49,544] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 26).
+[2019-07-24 23:39:49,546] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,546] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,546] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,546] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,591] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:49,591] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:49,592] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":15}}
+[2019-07-24 23:39:49,592] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":15}}
+[2019-07-24 23:39:49,595] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(15)
+[2019-07-24 23:39:49,595] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(15)
+[2019-07-24 23:39:49,841] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:49,841] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:49,843] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":16,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":39}}}
+[2019-07-24 23:39:49,843] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":16,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":39}}}
+[2019-07-24 23:39:49,846] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 39).
+[2019-07-24 23:39:49,846] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 39).
+[2019-07-24 23:39:49,848] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,848] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,848] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:49,848] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:50,021] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:50,021] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:50,022] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":16}}
+[2019-07-24 23:39:50,022] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":16}}
+[2019-07-24 23:39:50,026] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(16)
+[2019-07-24 23:39:50,026] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(16)
+[2019-07-24 23:39:50,371] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:50,371] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:50,372] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":17,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":43}}}
+[2019-07-24 23:39:50,372] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":17,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":43}}}
+[2019-07-24 23:39:50,374] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 43).
+[2019-07-24 23:39:50,374] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 43).
+[2019-07-24 23:39:50,375] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:50,375] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:50,375] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:50,375] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:50,576] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:50,576] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:50,577] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":17}}
+[2019-07-24 23:39:50,577] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":17}}
+[2019-07-24 23:39:50,579] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(17)
+[2019-07-24 23:39:50,579] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(17)
+[2019-07-24 23:39:55,367] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:55,367] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:55,368] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":18,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:55,368] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":18,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:55,370] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 17).
+[2019-07-24 23:39:55,370] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 17).
+[2019-07-24 23:39:55,370] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:55,370] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:55,370] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:55,370] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:55,541] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:55,541] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:55,542] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":18}}
+[2019-07-24 23:39:55,542] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":18}}
+[2019-07-24 23:39:55,544] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(18)
+[2019-07-24 23:39:55,544] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(18)
+[2019-07-24 23:39:55,545] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:55,545] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:55,546] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":19,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:55,546] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":19,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:55,548] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 17).
+[2019-07-24 23:39:55,548] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 17).
+[2019-07-24 23:39:55,553] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:39:55,553] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:39:57,501] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:57,501] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:57,502] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":19}}
+[2019-07-24 23:39:57,502] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":19}}
+[2019-07-24 23:39:57,504] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(19)
+[2019-07-24 23:39:57,504] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(19)
+[2019-07-24 23:39:58,178] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:58,178] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 220
+[2019-07-24 23:39:58,178] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":20,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:58,178] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":20,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":17}}}
+[2019-07-24 23:39:58,180] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 17).
+[2019-07-24 23:39:58,180] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 17).
+[2019-07-24 23:39:58,181] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:58,181] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:39:58,181] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:58,181] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:39:58,833] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:58,833] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:58,834] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":21,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:58,834] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":21,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:58,836] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 18).
+[2019-07-24 23:39:58,836] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 18).
+[2019-07-24 23:39:58,837] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:39:58,837] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:39:58,990] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:58,990] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:58,990] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":20}}
+[2019-07-24 23:39:58,990] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":20}}
+[2019-07-24 23:39:58,992] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(20)
+[2019-07-24 23:39:58,992] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(20)
+[2019-07-24 23:39:59,034] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:59,034] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:39:59,035] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":21}}
+[2019-07-24 23:39:59,035] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":21}}
+[2019-07-24 23:39:59,039] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(21)
+[2019-07-24 23:39:59,039] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(21)
+[2019-07-24 23:39:59,039] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:59,039] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 225
+[2019-07-24 23:39:59,040] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":22,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:59,040] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":22,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"},"position":{"line":19,"character":18}}}
+[2019-07-24 23:39:59,042] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 18).
+[2019-07-24 23:39:59,042] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got goto definition request at (19, 18).
+[2019-07-24 23:39:59,043] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:39:59,043] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Goto Definition future completed: succes? false
+[2019-07-24 23:40:05,314] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3484
+[2019-07-24 23:40:05,314] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3484
+[2019-07-24 23:40:05,315] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala","languageId":"scala","version":1,"text":"package models.overview\n\nimport play.api.libs.json._\n\nobject ClusterOverview {\n\n  def apply(clusterState: JsValue, nodesStats: JsValue, indicesStats: JsValue,\n            clusterSettings: JsValue, aliases: JsValue, clusterHealth: JsValue,\n            nodesInfo: JsValue): JsValue = {\n    val indices = buildIndices(clusterState, indicesStats, aliases)\n\n    val masterNodeId = (clusterState \\ \"master_node\").as[String]\n\n    val persistentAllocation = (clusterSettings \\ \"persistent\" \\ \"cluster\" \\ \"routing\" \\ \"allocation\" \\ \"enable\").asOpt[String].getOrElse(\"all\")\n    val transientAllocation = (clusterSettings \\ \"transient\" \\ \"cluster\" \\ \"routing\" \\ \"allocation\" \\ \"enable\").asOpt[String]\n    val shardAllocation = transientAllocation.getOrElse(persistentAllocation).equals(\"all\")\n\n    JsObject(Seq(\n      // clusterHealth\n      \"cluster_name\" -> (clusterHealth \\ \"cluster_name\").as[JsString],\n      \"status\" -> (clusterHealth \\ \"status\").as[JsString],\n      \"number_of_nodes\" -> (clusterHealth \\ \"number_of_nodes\").as[JsNumber],\n      \"active_primary_shards\" -> (clusterHealth \\ \"active_primary_shards\").as[JsNumber],\n      \"active_shards\" -> (clusterHealth \\ \"active_shards\").as[JsNumber],\n      \"relocating_shards\" -> (clusterHealth \\ \"relocating_shards\").as[JsNumber],\n      \"initializing_shards\" -> (clusterHealth \\ \"initializing_shards\").as[JsNumber],\n      \"unassigned_shards\" -> (clusterHealth \\ \"unassigned_shards\").as[JsNumber],\n      // indicesStats\n      \"docs_count\" -> (indicesStats \\ \"_all\" \\ \"primaries\" \\ \"docs\" \\ \"count\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"size_in_bytes\" -> (indicesStats \\ \"_all\" \\ \"total\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"total_indices\" -> JsNumber(indices.size),\n      \"closed_indices\" -> JsNumber(indices.count { idx => (idx \\ \"closed\").as[Boolean] }),\n      \"special_indices\" -> JsNumber(indices.count { idx => (idx \\ \"special\").as[Boolean] }),\n      \"indices\" -> JsArray(indices),\n      \"nodes\" -> buildNodes(masterNodeId, nodesInfo, nodesStats),\n      \"shard_allocation\" -> JsBoolean(shardAllocation)\n    ))\n  }\n\n  def buildNodes(masterNodeId: String, nodesInfo: JsValue, nodesStats: JsValue): JsArray =\n    JsArray(\n      (nodesStats \\ \"nodes\").as[JsObject].value.map {\n        case (id, stats) =>\n          val info = (nodesInfo \\ \"nodes\" \\ id).as[JsObject]\n          Node(id, info, stats, masterNodeId)\n      }.toSeq\n    )\n\n  def buildIndices(clusterState: JsValue, indicesStats: JsValue, aliases: JsValue): Seq[JsValue] = {\n    val routingTable = (clusterState \\ \"routing_table\" \\ \"indices\").as[JsObject]\n    val openIndices = routingTable.value.map { case (index, shards) =>\n      val indexStats   = (indicesStats \\ \"indices\" \\ index).asOpt[JsObject].getOrElse(Json.obj())\n      val indexAliases = (aliases \\ index \\ \"aliases\").asOpt[JsObject].getOrElse(Json.obj()) // 1.4 < does not return aliases obj\n\n      Index(index, indexStats, shards, indexAliases)\n    }.toSeq\n\n    val closedIndices = ClosedIndices(clusterState)\n    openIndices ++ closedIndices\n  }\n\n}\n"}}}
+[2019-07-24 23:40:05,315] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala","languageId":"scala","version":1,"text":"package models.overview\n\nimport play.api.libs.json._\n\nobject ClusterOverview {\n\n  def apply(clusterState: JsValue, nodesStats: JsValue, indicesStats: JsValue,\n            clusterSettings: JsValue, aliases: JsValue, clusterHealth: JsValue,\n            nodesInfo: JsValue): JsValue = {\n    val indices = buildIndices(clusterState, indicesStats, aliases)\n\n    val masterNodeId = (clusterState \\ \"master_node\").as[String]\n\n    val persistentAllocation = (clusterSettings \\ \"persistent\" \\ \"cluster\" \\ \"routing\" \\ \"allocation\" \\ \"enable\").asOpt[String].getOrElse(\"all\")\n    val transientAllocation = (clusterSettings \\ \"transient\" \\ \"cluster\" \\ \"routing\" \\ \"allocation\" \\ \"enable\").asOpt[String]\n    val shardAllocation = transientAllocation.getOrElse(persistentAllocation).equals(\"all\")\n\n    JsObject(Seq(\n      // clusterHealth\n      \"cluster_name\" -> (clusterHealth \\ \"cluster_name\").as[JsString],\n      \"status\" -> (clusterHealth \\ \"status\").as[JsString],\n      \"number_of_nodes\" -> (clusterHealth \\ \"number_of_nodes\").as[JsNumber],\n      \"active_primary_shards\" -> (clusterHealth \\ \"active_primary_shards\").as[JsNumber],\n      \"active_shards\" -> (clusterHealth \\ \"active_shards\").as[JsNumber],\n      \"relocating_shards\" -> (clusterHealth \\ \"relocating_shards\").as[JsNumber],\n      \"initializing_shards\" -> (clusterHealth \\ \"initializing_shards\").as[JsNumber],\n      \"unassigned_shards\" -> (clusterHealth \\ \"unassigned_shards\").as[JsNumber],\n      // indicesStats\n      \"docs_count\" -> (indicesStats \\ \"_all\" \\ \"primaries\" \\ \"docs\" \\ \"count\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"size_in_bytes\" -> (indicesStats \\ \"_all\" \\ \"total\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"total_indices\" -> JsNumber(indices.size),\n      \"closed_indices\" -> JsNumber(indices.count { idx => (idx \\ \"closed\").as[Boolean] }),\n      \"special_indices\" -> JsNumber(indices.count { idx => (idx \\ \"special\").as[Boolean] }),\n      \"indices\" -> JsArray(indices),\n      \"nodes\" -> buildNodes(masterNodeId, nodesInfo, nodesStats),\n      \"shard_allocation\" -> JsBoolean(shardAllocation)\n    ))\n  }\n\n  def buildNodes(masterNodeId: String, nodesInfo: JsValue, nodesStats: JsValue): JsArray =\n    JsArray(\n      (nodesStats \\ \"nodes\").as[JsObject].value.map {\n        case (id, stats) =>\n          val info = (nodesInfo \\ \"nodes\" \\ id).as[JsObject]\n          Node(id, info, stats, masterNodeId)\n      }.toSeq\n    )\n\n  def buildIndices(clusterState: JsValue, indicesStats: JsValue, aliases: JsValue): Seq[JsValue] = {\n    val routingTable = (clusterState \\ \"routing_table\" \\ \"indices\").as[JsObject]\n    val openIndices = routingTable.value.map { case (index, shards) =>\n      val indexStats   = (indicesStats \\ \"indices\" \\ index).asOpt[JsObject].getOrElse(Json.obj())\n      val indexAliases = (aliases \\ index \\ \"aliases\").asOpt[JsObject].getOrElse(Json.obj()) // 1.4 < does not return aliases obj\n\n      Index(index, indexStats, shards, indexAliases)\n    }.toSeq\n\n    val closedIndices = ClosedIndices(clusterState)\n    openIndices ++ closedIndices\n  }\n\n}\n"}}}
+[2019-07-24 23:40:05,317] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 185
+[2019-07-24 23:40:05,317] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 185
+[2019-07-24 23:40:05,318] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":23,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"}}}
+[2019-07-24 23:40:05,318] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":23,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"}}}
+[2019-07-24 23:40:05,327] DEBUG langserver.core.MessageWriter - Content-Length: 37
+
+
+
+{"jsonrpc":"2.0","result":[],"id":23}
+[2019-07-24 23:40:05,327] DEBUG langserver.core.MessageWriter - Content-Length: 37
+
+
+
+{"jsonrpc":"2.0","result":[],"id":23}
+[2019-07-24 23:40:05,327] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":23}
+[2019-07-24 23:40:05,327] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":23}
+[2019-07-24 23:40:09,958] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:40:09,958] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:40:09,959] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":24,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":24,"character":37}}}
+[2019-07-24 23:40:09,959] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":24,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":24,"character":37}}}
+[2019-07-24 23:40:09,961] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (24, 37).
+[2019-07-24 23:40:09,961] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (24, 37).
+[2019-07-24 23:40:09,963] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:09,963] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:09,963] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:09,963] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:10,005] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:10,005] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:10,006] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":24}}
+[2019-07-24 23:40:10,006] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":24}}
+[2019-07-24 23:40:10,007] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(24)
+[2019-07-24 23:40:10,007] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(24)
+[2019-07-24 23:40:19,703] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3729
+[2019-07-24 23:40:19,703] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 3729
+[2019-07-24 23:40:19,704] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala","languageId":"scala","version":1,"text":"package models.overview\n\nimport play.api.libs.json._\n\nobject Index {\n\n  def apply(name: String, stats: JsValue, routingTable: JsValue, aliases: JsValue): JsValue = {\n    val shardMap = createShardMap(routingTable)\n\n    JsObject(Seq(\n      \"name\" -> JsString(name),\n      \"closed\" -> JsBoolean(false),\n      \"special\" -> JsBoolean(name.startsWith(\".\")),\n      \"unhealthy\" -> JsBoolean(isIndexUnhealthy(shardMap)),\n      \"doc_count\" -> (stats \\ \"primaries\" \\ \"docs\" \\ \"count\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"deleted_docs\" -> (stats \\ \"primaries\" \\ \"docs\" \\ \"deleted\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"size_in_bytes\" -> (stats \\ \"primaries\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"total_size_in_bytes\" -> (stats \\ \"total\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"aliases\" -> JsArray(aliases.as[JsObject].keys.map(JsString(_)).toSeq), // 1.4 < does not return aliases obj\n      \"num_shards\" -> JsNumber((routingTable \\ \"shards\").as[JsObject].keys.map(_.toInt).max + 1),\n      \"num_replicas\" -> JsNumber((routingTable \\ \"shards\" \\ \"0\").as[JsArray].value.size - 1),\n      \"shards\" -> JsObject(shardMap)\n    ))\n  }\n\n  /**\n    * Parses shard information as a pair where first element is the allocating node and value\n    * is the shard representation itself.\n    *\n    * For relocating shards, creates an extra shard with INITIALIZING state allocated to the target node\n    *\n    * @param shard\n    * @return\n    */\n  def parseShard(shard: JsValue): Seq[(String, JsValue)] = {\n    Seq((shard \\ \"node\").asOpt[String].getOrElse(\"unassigned\") -> shard) ++\n      (shard \\ \"relocating_node\").asOpt[String].map(createInitializingShard(_, shard)).toSeq\n  }\n\n  /**\n    * Transforms the routing table in a map where the keys are node ids and the values are\n    * the list of shards allocated to the given node. For unassigned shards, unassigned is used\n    * as the key.\n    *\n    * @param routingTable\n    * @return\n    */\n  def createShardMap(routingTable: JsValue): Map[String, JsArray] = {\n    (routingTable \\ \"shards\").as[JsObject].value.toSeq.flatMap { case (_, shards) =>\n      shards.as[JsArray].value.flatMap(parseShard(_))\n    }.groupBy(_._1).mapValues(v => JsArray(v.map(_._2)))\n  }\n\n  /**\n    * Returns true if at least one of the index shards is considered unhealthy\n    *\n    * @param shardMap\n    * @return\n    */\n  private def isIndexUnhealthy(shardMap: Map[String, JsArray]): Boolean =\n    shardMap.values.exists { shards =>\n      shards.value.exists { shard => isShardUnhealthy(shard) }\n    }\n\n\n  /**\n    * Returns true if the shard state is other than STARTED\n    *\n    * @param shard\n    * @return\n    */\n  private def isShardUnhealthy(shard: JsValue): Boolean =\n    !(shard \\ \"state\").as[String].equals(\"STARTED\")\n\n  /**\n    * Creates an artificial shard with initializing state allocated to the target node\n    *\n    * @param targetNode\n    * @param shard\n    * @return\n    */\n  private def createInitializingShard(targetNode: String, shard: JsValue): (String, JsValue) =\n    (targetNode -> Json.obj(\n      \"node\" -> JsString(targetNode),\n      \"index\" -> (shard \\ \"index\").as[JsValue],\n      \"state\" -> JsString(\"INITIALIZING\"),\n      \"shard\" -> (shard \\ \"shard\").as[JsValue],\n      \"primary\" -> JsBoolean(false)\n    ))\n\n}\n"}}}
+[2019-07-24 23:40:19,704] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala","languageId":"scala","version":1,"text":"package models.overview\n\nimport play.api.libs.json._\n\nobject Index {\n\n  def apply(name: String, stats: JsValue, routingTable: JsValue, aliases: JsValue): JsValue = {\n    val shardMap = createShardMap(routingTable)\n\n    JsObject(Seq(\n      \"name\" -> JsString(name),\n      \"closed\" -> JsBoolean(false),\n      \"special\" -> JsBoolean(name.startsWith(\".\")),\n      \"unhealthy\" -> JsBoolean(isIndexUnhealthy(shardMap)),\n      \"doc_count\" -> (stats \\ \"primaries\" \\ \"docs\" \\ \"count\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"deleted_docs\" -> (stats \\ \"primaries\" \\ \"docs\" \\ \"deleted\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"size_in_bytes\" -> (stats \\ \"primaries\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"total_size_in_bytes\" -> (stats \\ \"total\" \\ \"store\" \\ \"size_in_bytes\").asOpt[JsNumber].getOrElse(JsNumber(0)),\n      \"aliases\" -> JsArray(aliases.as[JsObject].keys.map(JsString(_)).toSeq), // 1.4 < does not return aliases obj\n      \"num_shards\" -> JsNumber((routingTable \\ \"shards\").as[JsObject].keys.map(_.toInt).max + 1),\n      \"num_replicas\" -> JsNumber((routingTable \\ \"shards\" \\ \"0\").as[JsArray].value.size - 1),\n      \"shards\" -> JsObject(shardMap)\n    ))\n  }\n\n  /**\n    * Parses shard information as a pair where first element is the allocating node and value\n    * is the shard representation itself.\n    *\n    * For relocating shards, creates an extra shard with INITIALIZING state allocated to the target node\n    *\n    * @param shard\n    * @return\n    */\n  def parseShard(shard: JsValue): Seq[(String, JsValue)] = {\n    Seq((shard \\ \"node\").asOpt[String].getOrElse(\"unassigned\") -> shard) ++\n      (shard \\ \"relocating_node\").asOpt[String].map(createInitializingShard(_, shard)).toSeq\n  }\n\n  /**\n    * Transforms the routing table in a map where the keys are node ids and the values are\n    * the list of shards allocated to the given node. For unassigned shards, unassigned is used\n    * as the key.\n    *\n    * @param routingTable\n    * @return\n    */\n  def createShardMap(routingTable: JsValue): Map[String, JsArray] = {\n    (routingTable \\ \"shards\").as[JsObject].value.toSeq.flatMap { case (_, shards) =>\n      shards.as[JsArray].value.flatMap(parseShard(_))\n    }.groupBy(_._1).mapValues(v => JsArray(v.map(_._2)))\n  }\n\n  /**\n    * Returns true if at least one of the index shards is considered unhealthy\n    *\n    * @param shardMap\n    * @return\n    */\n  private def isIndexUnhealthy(shardMap: Map[String, JsArray]): Boolean =\n    shardMap.values.exists { shards =>\n      shards.value.exists { shard => isShardUnhealthy(shard) }\n    }\n\n\n  /**\n    * Returns true if the shard state is other than STARTED\n    *\n    * @param shard\n    * @return\n    */\n  private def isShardUnhealthy(shard: JsValue): Boolean =\n    !(shard \\ \"state\").as[String].equals(\"STARTED\")\n\n  /**\n    * Creates an artificial shard with initializing state allocated to the target node\n    *\n    * @param targetNode\n    * @param shard\n    * @return\n    */\n  private def createInitializingShard(targetNode: String, shard: JsValue): (String, JsValue) =\n    (targetNode -> Json.obj(\n      \"node\" -> JsString(targetNode),\n      \"index\" -> (shard \\ \"index\").as[JsValue],\n      \"state\" -> JsString(\"INITIALIZING\"),\n      \"shard\" -> (shard \\ \"shard\").as[JsValue],\n      \"primary\" -> JsBoolean(false)\n    ))\n\n}\n"}}}
+[2019-07-24 23:40:19,706] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 175
+[2019-07-24 23:40:19,706] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 175
+[2019-07-24 23:40:19,707] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":25,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"}}}
+[2019-07-24 23:40:19,707] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":25,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"}}}
+[2019-07-24 23:40:19,714] DEBUG langserver.core.MessageWriter - Content-Length: 37
+
+
+
+{"jsonrpc":"2.0","result":[],"id":25}
+[2019-07-24 23:40:19,714] DEBUG langserver.core.MessageWriter - Content-Length: 37
+
+
+
+{"jsonrpc":"2.0","result":[],"id":25}
+[2019-07-24 23:40:19,714] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":25}
+[2019-07-24 23:40:19,714] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","result":[],"id":25}
+[2019-07-24 23:40:21,535] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-07-24 23:40:21,535] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-07-24 23:40:21,536] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":26,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"},"position":{"line":20,"character":38}}}
+[2019-07-24 23:40:21,536] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":26,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"},"position":{"line":20,"character":38}}}
+[2019-07-24 23:40:21,538] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (20, 38).
+[2019-07-24 23:40:21,538] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (20, 38).
+[2019-07-24 23:40:21,540] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:21,540] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:21,541] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:21,541] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:21,865] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:21,865] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:21,867] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":26}}
+[2019-07-24 23:40:21,867] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":26}}
+[2019-07-24 23:40:21,870] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(26)
+[2019-07-24 23:40:21,870] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(26)
+[2019-07-24 23:40:55,912] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-07-24 23:40:55,912] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 204
+[2019-07-24 23:40:55,914] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":27,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"},"position":{"line":81,"character":70}}}
+[2019-07-24 23:40:55,914] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":27,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"},"position":{"line":81,"character":70}}}
+[2019-07-24 23:40:55,916] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (81, 70).
+[2019-07-24 23:40:55,916] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (81, 70).
+[2019-07-24 23:40:55,918] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:55,918] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:40:55,918] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:55,918] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:40:56,366] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:56,366] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:40:56,366] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":27}}
+[2019-07-24 23:40:56,366] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":27}}
+[2019-07-24 23:40:56,368] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(27)
+[2019-07-24 23:40:56,368] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(27)
+[2019-07-24 23:41:37,158] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:37,158] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:37,159] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":28,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":22,"character":62}}}
+[2019-07-24 23:41:37,159] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":28,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":22,"character":62}}}
+[2019-07-24 23:41:37,160] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (22, 62).
+[2019-07-24 23:41:37,160] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (22, 62).
+[2019-07-24 23:41:37,161] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:37,161] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:37,161] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:37,161] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:37,530] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:37,530] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:37,531] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":28}}
+[2019-07-24 23:41:37,531] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":28}}
+[2019-07-24 23:41:37,534] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(28)
+[2019-07-24 23:41:37,534] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(28)
+[2019-07-24 23:41:50,465] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:50,465] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:50,466] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":29,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":17,"character":16}}}
+[2019-07-24 23:41:50,466] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":29,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":17,"character":16}}}
+[2019-07-24 23:41:50,468] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (17, 16).
+[2019-07-24 23:41:50,468] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (17, 16).
+[2019-07-24 23:41:50,468] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:50,468] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:50,468] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:50,468] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:50,556] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:50,556] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:50,557] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":29}}
+[2019-07-24 23:41:50,557] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":29}}
+[2019-07-24 23:41:50,558] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(29)
+[2019-07-24 23:41:50,558] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(29)
+[2019-07-24 23:41:51,206] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:51,206] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:41:51,207] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":30,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":19,"character":16}}}
+[2019-07-24 23:41:51,207] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":30,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":19,"character":16}}}
+[2019-07-24 23:41:51,209] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 16).
+[2019-07-24 23:41:51,209] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (19, 16).
+[2019-07-24 23:41:51,210] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:51,210] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:51,210] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:51,210] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:51,224] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:51,224] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:51,225] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":30}}
+[2019-07-24 23:41:51,225] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":30}}
+[2019-07-24 23:41:51,228] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(30)
+[2019-07-24 23:41:51,228] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(30)
+[2019-07-24 23:41:52,310] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:52,310] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:52,311] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":31,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":22}}}
+[2019-07-24 23:41:52,311] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":31,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":22}}}
+[2019-07-24 23:41:52,313] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 22).
+[2019-07-24 23:41:52,313] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 22).
+[2019-07-24 23:41:52,314] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:52,314] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:52,314] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:52,314] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:52,381] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:52,381] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:52,383] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":31}}
+[2019-07-24 23:41:52,383] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":31}}
+[2019-07-24 23:41:52,385] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(31)
+[2019-07-24 23:41:52,385] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(31)
+[2019-07-24 23:41:53,306] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:53,306] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:53,307] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":32,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":10}}}
+[2019-07-24 23:41:53,307] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":32,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":10}}}
+[2019-07-24 23:41:53,309] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 10).
+[2019-07-24 23:41:53,309] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 10).
+[2019-07-24 23:41:53,310] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:53,310] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:53,310] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:53,310] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:53,456] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:53,456] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:53,457] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":32}}
+[2019-07-24 23:41:53,457] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":32}}
+[2019-07-24 23:41:53,459] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(32)
+[2019-07-24 23:41:53,459] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(32)
+[2019-07-24 23:41:55,616] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:55,616] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:55,619] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":33,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":21}}}
+[2019-07-24 23:41:55,619] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":33,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":21}}}
+[2019-07-24 23:41:55,621] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 21).
+[2019-07-24 23:41:55,621] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 21).
+[2019-07-24 23:41:55,622] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:55,622] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:55,622] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:55,622] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:55,708] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:55,708] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:55,709] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":33}}
+[2019-07-24 23:41:55,709] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":33}}
+[2019-07-24 23:41:55,711] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(33)
+[2019-07-24 23:41:55,711] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(33)
+[2019-07-24 23:41:57,614] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:57,614] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:57,615] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":34,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":39}}}
+[2019-07-24 23:41:57,615] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":34,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":39}}}
+[2019-07-24 23:41:57,619] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 39).
+[2019-07-24 23:41:57,619] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 39).
+[2019-07-24 23:41:57,620] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:57,620] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:57,620] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:57,620] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:57,656] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:57,656] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:57,662] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":34}}
+[2019-07-24 23:41:57,662] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":34}}
+[2019-07-24 23:41:57,663] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(34)
+[2019-07-24 23:41:57,663] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(34)
+[2019-07-24 23:41:59,003] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:59,003] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:41:59,004] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":35,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":53}}}
+[2019-07-24 23:41:59,004] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":35,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":53}}}
+[2019-07-24 23:41:59,005] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 53).
+[2019-07-24 23:41:59,005] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 53).
+[2019-07-24 23:41:59,007] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:59,007] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:41:59,007] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:59,007] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:41:59,464] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:59,464] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:41:59,465] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":35}}
+[2019-07-24 23:41:59,465] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":35}}
+[2019-07-24 23:41:59,467] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(35)
+[2019-07-24 23:41:59,467] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(35)
+[2019-07-24 23:42:01,491] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:42:01,491] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:42:01,491] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":36,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":27}}}
+[2019-07-24 23:42:01,491] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":36,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":9,"character":27}}}
+[2019-07-24 23:42:01,492] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 27).
+[2019-07-24 23:42:01,492] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (9, 27).
+[2019-07-24 23:42:01,493] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:01,493] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:01,493] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:01,493] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:01,645] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:01,645] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:01,646] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":36}}
+[2019-07-24 23:42:01,646] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":36}}
+[2019-07-24 23:42:01,647] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(36)
+[2019-07-24 23:42:01,647] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(36)
+[2019-07-24 23:42:02,478] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:02,478] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:02,479] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":37,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":33,"character":25}}}
+[2019-07-24 23:42:02,479] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":37,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":33,"character":25}}}
+[2019-07-24 23:42:02,481] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (33, 25).
+[2019-07-24 23:42:02,481] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (33, 25).
+[2019-07-24 23:42:02,483] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:02,483] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:02,483] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:02,483] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:02,774] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:02,774] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:02,775] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":37}}
+[2019-07-24 23:42:02,775] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":37}}
+[2019-07-24 23:42:02,777] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(37)
+[2019-07-24 23:42:02,777] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(37)
+[2019-07-24 23:42:07,339] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:42:07,339] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 213
+[2019-07-24 23:42:07,340] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":38,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":58,"character":9}}}
+[2019-07-24 23:42:07,340] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":38,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":58,"character":9}}}
+[2019-07-24 23:42:07,341] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (58, 9).
+[2019-07-24 23:42:07,341] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (58, 9).
+[2019-07-24 23:42:07,342] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:07,342] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:07,343] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:07,343] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:07,602] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:07,602] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:07,603] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":38}}
+[2019-07-24 23:42:07,603] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":38}}
+[2019-07-24 23:42:07,605] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(38)
+[2019-07-24 23:42:07,605] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(38)
+[2019-07-24 23:42:08,797] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:08,797] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:08,800] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":39,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":58,"character":26}}}
+[2019-07-24 23:42:08,800] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":39,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":58,"character":26}}}
+[2019-07-24 23:42:08,803] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (58, 26).
+[2019-07-24 23:42:08,803] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (58, 26).
+[2019-07-24 23:42:08,804] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:08,804] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:08,804] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:08,804] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:09,291] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:09,291] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:09,291] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":39}}
+[2019-07-24 23:42:09,291] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":39}}
+[2019-07-24 23:42:09,293] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(39)
+[2019-07-24 23:42:09,293] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(39)
+[2019-07-24 23:42:11,409] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:11,409] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 214
+[2019-07-24 23:42:11,409] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":40,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":57,"character":18}}}
+[2019-07-24 23:42:11,409] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":40,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"},"position":{"line":57,"character":18}}}
+[2019-07-24 23:42:11,411] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (57, 18).
+[2019-07-24 23:42:11,411] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (57, 18).
+[2019-07-24 23:42:11,413] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:11,413] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-07-24 23:42:11,413] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:11,413] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-07-24 23:42:11,459] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:11,459] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:42:11,459] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":40}}
+[2019-07-24 23:42:11,459] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":40}}
+[2019-07-24 23:42:11,462] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(40)
+[2019-07-24 23:42:11,462] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(40)
+[2019-07-24 23:51:08,873] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:51:08,873] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-07-24 23:51:08,874] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":22}}
+[2019-07-24 23:51:08,874] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":22}}
+[2019-07-24 23:51:08,876] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(22)
+[2019-07-24 23:51:08,876] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(22)
+[2019-07-25 00:07:33,873] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 161
+[2019-07-25 00:07:33,873] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 161
+[2019-07-25 00:07:33,874] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"}}}
+[2019-07-25 00:07:33,874] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala"}}}
+[2019-07-25 00:07:33,876] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala from Ensime.
+[2019-07-25 00:07:33,876] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/models/overview/Index.scala from Ensime.
+[2019-07-25 00:07:44,082] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 177
+[2019-07-25 00:07:44,082] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 177
+[2019-07-25 00:07:44,083] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"}}}
+[2019-07-25 00:07:44,083] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala"}}}
+[2019-07-25 00:07:44,084] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala from Ensime.
+[2019-07-25 00:07:44,084] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/controllers/ClusterOverviewController.scala from Ensime.
+[2019-07-25 00:07:45,282] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 171
+[2019-07-25 00:07:45,282] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 171
+[2019-07-25 00:07:45,283] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"}}}
+[2019-07-25 00:07:45,283] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala"}}}
+[2019-07-25 00:07:45,287] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala from Ensime.
+[2019-07-25 00:07:45,287] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - Removing file:///home/viethq/Desktop/github/cerebro/app/models/overview/ClusterOverview.scala from Ensime.
+[2019-07-25 00:20:35,016] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-07-25 00:20:35,016] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-07-25 00:20:35,029] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":41,"method":"shutdown","params":null}
+[2019-07-25 00:20:35,029] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":41,"method":"shutdown","params":null}
+[2019-07-25 00:20:35,115] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":41}
+[2019-07-25 00:20:35,115] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":41}
+[2019-07-25 00:20:35,115] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":41}
+[2019-07-25 00:20:35,115] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":41}
+[2019-07-25 00:20:36,034] INFO langserver.core.MessageReader - End of stream, terminating thread
+[2019-07-25 00:20:36,034] INFO langserver.core.MessageReader - End of stream, terminating thread
+[2019-07-25 00:20:36,034] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutdown request
+[2019-07-25 00:20:36,034] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutdown request
+[2019-07-25 00:20:36,035] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutting down actor system.
+[2019-07-25 00:20:36,035] INFO org.github.dragos.vscode.EnsimeLanguageServer - Shutting down actor system.
+[2019-07-25 00:20:36,107] INFO org.github.dragos.vscode.EnsimeLanguageServer - Actor system down.
+[2019-07-25 00:20:36,107] INFO org.github.dragos.vscode.EnsimeLanguageServer - Actor system down.

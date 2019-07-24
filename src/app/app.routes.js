@@ -19,6 +19,10 @@ angular.module('cerebro', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           templateUrl: 'rest/index.html',
           controller: 'RestController'
         })
+        .when('/structquery', {
+          templateUrl: 'structquery/index.html',
+          controller: 'StructQueryController'
+        })
         .when('/aliases', {
           templateUrl: 'aliases.html',
           controller: 'AliasesController'
