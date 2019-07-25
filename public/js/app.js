@@ -1803,20 +1803,14 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
   function($scope, $http, $sce, OverviewDataService, AlertService, ModalService,
            AceEditorService, ClipboardService) {
 
-    var listIndex = []
     OverviewDataService.getOverview(
       function(data) {
         var i = 0
-        for (i = 0; i < data.indices.length; i++) {
-          listIndex.push(data.indices[i].name)
-        }
-
-        var i = 0
         $scope.items  = []
-        for (i = 0; i < listIndex.length; i++) {
+        for (i = 0; i < data.indices.length; i++) {
           $scope.items.push({
-            id: listIndex[i],
-            label: listIndex[i]
+            id: data.indices[i].name,
+            label: data.indices[i].name + " (" + data.indices[i].doc_count + " docs)"
           })
         }
 
@@ -1827,6 +1821,16 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
       }
     );
 
+    $scope.updateIndex = function() {
+      alert($scope.selected)
+   }
+
+    OverviewDataService.getIndexMapping("d", 
+      function(data) {
+        console.log(data)
+      }, function(error){
+
+    });
   }]
 );
 
