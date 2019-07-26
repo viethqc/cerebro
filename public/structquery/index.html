@@ -24,7 +24,15 @@
         Index: 
       </div>
       <div class="col-lg-2 col-md-3 form-group">
-        <select ng-options="item as item.label for item in items track by item.id" ng-model="selected" class="form-control" ng-change="updateIndex()""></select>
+        <select ng-options="item as item.label for item in itemsIndex track by item.id" ng-model="indexSelected" class="form-control" ng-change="updateIndex()"></select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 col-md-3 form-group">
+        Type: 
+      </div>
+      <div class="col-lg-2 col-md-3 form-group">
+        <select ng-options="item as item.label for item in itemsType track by item.id" ng-model="typeSelected" class="form-control" ng-change="updateType()"></select>
       </div>
     </div>
 
