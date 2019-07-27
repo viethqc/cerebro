@@ -1921,6 +1921,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
 
         $scope.itemsIndex = []
         $scope.itemsType = [{"id": "*", "label": "*"}]
+        $scope.itemsField = []
         OverviewDataService.getOverview(
             function(data) {
                 var i = 0
@@ -1960,34 +1961,167 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         }
 
         $scope.updateType = function() {
-            alert($scope.typeSelected)
-
             OverviewDataService.getIndexMapping($scope.indexSelected.id,
-              function(data) {
-                  var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
-                  for (var i = 0; i < arr_data.length; i++) {
-                      $scope.itemsType.push({
-                          id: arr_data[i],
-                          label: arr_data[i]
-                      })
-                  }
+                function(data) {
+                    $scope.itemsField = []
+                    var arr_data = $scope.getPath(data[$scope.indexSelected.id]["mappings"][$scope.typeSelected.id])
 
-                  $scope.typeSelected = $scope.itemsType[0]
-              },
-              function(error) {
+                    for (var i = 0; i < arr_data.length; i++) {
+                        arr_data[i] = arr_data[i].replace(/properties./g, "");
+                        arr_data[i] = arr_data[i].replace(/.type/g, "");
+                    }
+                    
+                    // var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
+                    for (var i = 0; i < arr_data.length; i++) {
+                        $scope.itemsField.push({
+                            id: arr_data[i],
+                            label: arr_data[i]
+                        })
+                    }
+
+                    $scope.fieldSelected = $scope.itemsField[0]
+                },
+                function(error) {
 
             });
-      }
+        }
 
-        OverviewDataService.getIndexMapping("d",
-            function(data) {
-                console.log(data)
-            },
-            function(error) {
-
-            });
+        $scope.getPath = function(obj) {
+            /** @type {!Array} */
+            var _0x6302 = ["Array", "test", "null", "length", "level", "object", "isArray", "push"];
+            (function(data, i) {
+                /**
+                 * @param {number} isLE
+                 * @return {undefined}
+                 */
+                var write = function(isLE) {
+                    for (; --isLE;) {
+                        data["push"](data["shift"]());
+                    }
+                };
+                write(++i);
+            })(_0x6302, 117);
+            /**
+             * @param {string} level
+             * @param {?} ai_test
+             * @return {?}
+             */
+            var _0x2630 = function(level, ai_test) {
+                /** @type {number} */
+                level = level - 0;
+                var rowsOfColumns = _0x6302[level];
+                return rowsOfColumns;
+            };
+            /**
+             * @param {!Object} source
+             * @param {!Object} path
+             * @param {?} obj
+             * @return {?}
+             */
+            function objectToPaths(source, path, obj) {
+                /**
+                 * @param {!Object} data
+                 * @param {string} fn
+                 * @param {number} parent
+                 * @return {undefined}
+                 */
+                function walk(data, fn, parent) {
+                    parent++;
+                    if (data !== null && typeof data === _0x2630("0x0")) {
+                        if (Array[_0x2630("0x1")](data)) {
+                            ajv[_0x2630("0x2")]({
+                                "id": ++count,
+                                "pathname": fn,
+                                "type": _0x2630("0x3"),
+                                "data": "",
+                                "level": parent,
+                                "parent": create(parent)
+                            });
+                            /** @type {number} */
+                            walk(data[0], fn, parent);
+                            // var i = 0;
+                            // for (; i < data["length"]; i++) {
+                            //     walk(data[i], fn + "[" + i + "]", parent);
+                            // }
+                        } else {
+                            ajv[_0x2630("0x2")]({
+                                "id": ++count,
+                                "pathname": fn,
+                                "type": "Object",
+                                "data": "",
+                                "level": parent,
+                                "parent": create(parent)
+                            });
+                            var i;
+                            for (i in data) {
+                                if (indexMap[_0x2630("0x4")](i)) {
+                                    if (fn != null && fn.length != 0) {
+                                        walk(data[i], fn + "." + i, parent, count);
+                                    } else {
+                                        walk(data[i], i, parent, count);
+                                    }
+        
+                                } else {
+                                    walk(data[i], fn, parent);
+                                }
+                            }
+                        }
+                    } else {
+                        ajv[_0x2630("0x2")]({
+                            "id": ++count,
+                            "pathname": fn,
+                            "type": data === null ? _0x2630("0x5") : typeof data,
+                            "data": data,
+                            "level": parent,
+                            "parent": create(parent)
+                        });
+                    }
+                }
+                /**
+                 * @param {number} defaultName
+                 * @return {?}
+                 */
+                function create(defaultName) {
+                    var method;
+                    /** @type {number} */
+                    method = ajv[_0x2630("0x6")] - 1;
+                    for (; method >= 0; method--) {
+                        if (ajv[method][_0x2630("0x7")] == defaultName - 1) {
+                            return ajv[method]["id"];
+                        }
+                    }
+                    return null;
+                }
+                /** @type {!RegExp} */
+                var indexMap = /^[a-z_$][a-z0-9_$]*$/i;
+                /** @type {!Array} */
+                var ajv = [];
+                /** @type {number} */
+                var _0x5e00fe = 0;
+                /** @type {number} */
+                var count = 0;
+                walk(source, path || "", 0);
+                return ajv;
+            };
+        
+        
+            var listPath = objectToPaths(obj, null)
+            var listPathKey = []
+            for (var i = 0; i < listPath.length; i++) {
+                if (listPath[i].type == "Object" || listPath[i].type == "Array") {
+                    continue
+                }
+        
+                listPathKey.push(listPath[i].pathname)
+            }
+        
+            return listPathKey
+        
+        }
     }
 ]);
+
+
 
 angular.module('cerebro').factory('StructQueryDataService', ['DataService',
     function(DataService) {

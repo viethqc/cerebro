@@ -44,11 +44,8 @@
             <option value="should" >should</option>
           </select>
         </div>
-        <div class="col-lg-2 col-md-2 form-group">
-          <select class="form-control">
-            <option value="must" selected>match_all</option>
-            <option value="must_not">_all</option>
-          </select>
+        <div class="col-lg-2 col-md-3 form-group">
+          <select ng-options="item as item.label for item in itemsField track by item.id" ng-model="fieldSelected" class="form-control" ng-change="updateField()"></select>
         </div>
     </div>
 
