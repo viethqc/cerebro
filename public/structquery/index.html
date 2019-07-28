@@ -24,7 +24,7 @@
         Index: 
       </div>
       <div class="col-lg-2 col-md-3 form-group">
-        <select ng-options="item as item.label for item in itemsIndex track by item.id" ng-model="indexSelected" class="form-control" ng-change="updateIndex()"></select>
+        <select ng-options="item as item.label for item in itemsIndex track by item.id" ng-model="indexSelected" class="form-control" ng-change="changeIndex()"></select>
       </div>
     </div>
     <div class="row">
@@ -32,7 +32,7 @@
         Type: 
       </div>
       <div class="col-lg-2 col-md-3 form-group">
-        <select ng-options="item as item.label for item in itemsType track by item.id" ng-model="typeSelected" class="form-control" ng-change="updateType()"></select>
+        <select ng-options="item as item.label for item in itemsType track by item.id" ng-model="typeSelected" class="form-control" ng-change="changeType()"></select>
       </div>
     </div>
 
@@ -46,6 +46,38 @@
         </div>
         <div class="col-lg-2 col-md-3 form-group">
           <select ng-options="item as item.label for item in itemsField track by item.id" ng-model="fieldSelected" class="form-control" ng-change="updateField()"></select>
+        </div>
+        <div class="col-lg-2 col-md-2 form-group">
+          <select class="form-control">
+            <option value="must" selected>match</option>
+            <option value="must_not">term</option>
+            <option value="should" >wildcard</option>
+            <option value="should" >prefix</option>
+            <option value="should" >fuzzy</option>
+            <option value="should" >range</option>
+            <option value="should" >query_string</option>
+            <option value="should" >text</option>
+            <option value="should" >missing</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-md-2 form-group">
+          <input type="text"
+               class="form-control form-control-sm"
+               placeholder=""
+               ng-change="updateOptions(path)"
+               typeahead-wait-ms="20"
+               uib-typeahead="url for url in options | startsWith:$viewValue | limitTo:10"
+               typeahead-popup-template-url="customPopupTemplate.html"
+               typeahead-template-url="customTemplate.html">
+        </div>
+
+        <div class="col-lg-2 col-md-2 form-group">
+          <button type="submit" class="btn btn-default" ng-click="editor.format()">
+            <i></i> +
+          </button>
+          <button type="submit" class="btn btn-default" ng-click="editor.format()">
+            <i></i> -
+          </button>
         </div>
     </div>
 

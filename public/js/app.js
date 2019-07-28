@@ -1922,6 +1922,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         $scope.itemsIndex = []
         $scope.itemsType = [{"id": "*", "label": "*"}]
         $scope.itemsField = []
+        $scope.searchQueryHtml = '<h1>hello world</h1>'
         OverviewDataService.getOverview(
             function(data) {
                 var i = 0
@@ -1933,7 +1934,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                     })
                 }
 
-                $scope.indexSelected = $scope.itemsIndex[1];
+                $scope.indexSelected = $scope.itemsIndex[2];
 
                 OverviewDataService.getIndexMapping($scope.indexSelected.id,
                   function(data) {
@@ -1956,14 +1957,20 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
             }
         );
 
-        $scope.updateIndex = function() {
-            alert($scope.selected)
+        $scope.changeIndex = function() {
+            $scope.changeType()
         }
 
-        $scope.updateType = function() {
+        $scope.changeType = function() {
             OverviewDataService.getIndexMapping($scope.indexSelected.id,
                 function(data) {
-                    $scope.itemsField = []
+                    $scope.itemsField = [{
+                        id: "match_all",
+                        label: "match_all"
+                    }, {
+                        id: "_all",
+                        label: "_all"
+                    }]
                     var arr_data = $scope.getPath(data[$scope.indexSelected.id]["mappings"][$scope.typeSelected.id])
 
                     for (var i = 0; i < arr_data.length; i++) {
