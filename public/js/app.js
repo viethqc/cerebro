@@ -1922,7 +1922,52 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         $scope.itemsIndex = []
         $scope.itemsType = [{"id": "*", "label": "*"}]
         $scope.itemsField = []
-        $scope.searchQueryHtml = '<h1>hello world</h1>'
+        // $scope.helloworld = $sce.trustAsHtml('<div class="col-lg-2 col-md-2 form-group">\
+        //                                         <select class="form-control">\
+        //                                             <option value="must" selected>must</option>\
+        //                                             <option value="must_not">must_not</option>\
+        //                                             <option value="should">should</option>\
+        //                                         </select>\
+        //                                     </div>')
+
+
+        $scope.searchItems = [{
+            "query_bool": [{
+                id: "must",
+                label: "must"
+            } , {
+                id: "must_not",
+                label: "must_not"
+            } , {
+                id: "should",
+                label: "should"
+            }]
+        }, {
+            "query_bool": [{
+                id: "must",
+                label: "must"
+            } , {
+                id: "must_not",
+                label: "must_not"
+            } , {
+                id: "should",
+                label: "should"
+            }]
+        }]
+
+        $scope.searchItems[0].query_bool_selected = $scope.searchItems[0].query_bool[0]
+
+        // $scope.queryHtml = $sce.trustAsHtml('\
+        //     <div clas="row">\
+        //         <div class="col-lg-2 col-md-3 form-group">\
+        //             <select ng-options="item as item.label for item in queybool track by item.id" ng-model="hello" class="form-control" ng-change="updateField()"></select>\
+        //         </div>\
+        //         <div class="col-lg-2 col-md-3 form-group">\
+        //             <select ng-options="item as item.label for item in itemsField track by item.id" ng-model="fieldSelected" class="form-control" ng-change="updateField()"></select>\
+        //         </div>\
+        //     </div>'
+        // )
+
         OverviewDataService.getOverview(
             function(data) {
                 var i = 0
@@ -1937,18 +1982,75 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                 $scope.indexSelected = $scope.itemsIndex[2];
 
                 OverviewDataService.getIndexMapping($scope.indexSelected.id,
-                  function(data) {
-                      var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
-                      for (var i = 0; i < arr_data.length; i++) {
-                          $scope.itemsType.push({
-                              id: arr_data[i],
-                              label: arr_data[i]
-                          })
-                      }
+                    function(data) {
+                        //render list type
+                        var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
+                        for (var i = 0; i < arr_data.length; i++) {
+                            $scope.itemsType.push({
+                                id: arr_data[i],
+                                label: arr_data[i]
+                            })
+                        }
 
-                      $scope.typeSelected = $scope.itemsType[0]
-                  },
-                  function(error) {
+                        $scope.typeSelected = $scope.itemsType[0]
+
+
+                        //render list search field
+                        arr_data = $scope.getPath(data)
+                        var listSearchField = []
+                        var re = RegExp($scope.indexSelected.id + ".mappings.", 'g');
+                        for (var i = 0; i < arr_data.length; i++) {
+                            arr_data[i] = arr_data[i].replace(/properties./g, "");
+                            arr_data[i] = arr_data[i].replace(/.type/g, "");
+                            arr_data[i] = arr_data[i].replace(re, "");
+                        }
+                        
+                        // var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
+                        for (var i = 0; i < arr_data.length; i++) {
+                            listSearchField.push({
+                                id: arr_data[i],
+                                label: arr_data[i]
+                            })
+                        }
+
+                        $scope.searchItems[0].search_field = listSearchField
+                        $scope.searchItems[0].search_field_selected = $scope.searchItems[0].search_field[0]
+
+                        $scope.searchItems[0].search_type = [{
+                                id: "match",
+                                label: "match"
+                            } , {
+                                id: "term",
+                                label: "term"
+                            } , {
+                                id: "wildcard",
+                                label: "wildcard"
+                            } , {
+                                id: "wildcard",
+                                label: "wildcard"
+                            } , {
+                                id: "prefix",
+                                label: "prefix"
+                            } , {
+                                id: "fuzzy",
+                                label: "fuzzy"
+                            } , {
+                                id: "range",
+                                label: "range"
+                            } , {
+                                id: "query_string",
+                                label: "query_string"
+                            } , {
+                                id: "text",
+                                label: "text"
+                            } , {
+                                id: "missing",
+                                label: "missing"
+                            }
+                        ]
+                        $scope.searchItems[0].search_type_selected = $scope.searchItems[0].search_type[0]
+                    },
+                    function(error) {
 
                 });
             },
@@ -1959,6 +2061,28 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
 
         $scope.changeIndex = function() {
             $scope.changeType()
+        }
+
+        $scope.getNumber = function() {
+            return $scope.searchItems.length
+        }
+
+        $scope.plusSearchField = function(data) {
+            data = {
+                "query_bool": [{
+                    id: "must",
+                    label: "must"
+                } , {
+                    id: "must_not",
+                    label: "must_not"
+                } , {
+                    id: "should",
+                    label: "should"
+                }]
+            }
+
+            data.query_bool_selected = data.query_bool[0]
+            $scope.searchItems.push(data)
         }
 
         $scope.changeType = function() {
