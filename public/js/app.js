@@ -1942,17 +1942,6 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                 id: "should",
                 label: "should"
             }]
-        }, {
-            "query_bool": [{
-                id: "must",
-                label: "must"
-            } , {
-                id: "must_not",
-                label: "must_not"
-            } , {
-                id: "should",
-                label: "should"
-            }]
         }]
 
         $scope.searchItems[0].query_bool_selected = $scope.searchItems[0].query_bool[0]
@@ -2068,21 +2057,21 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         }
 
         $scope.plusSearchField = function(data) {
-            data = {
-                "query_bool": [{
-                    id: "must",
-                    label: "must"
-                } , {
-                    id: "must_not",
-                    label: "must_not"
-                } , {
-                    id: "should",
-                    label: "should"
-                }]
-            }
+            var clone = JSON.parse(JSON.stringify($scope.searchItems[0]));
 
-            data.query_bool_selected = data.query_bool[0]
-            $scope.searchItems.push(data)
+            $scope.searchItems.push(clone)
+        }
+
+        $scope.minusSearchField = function(index) {
+
+            var filtered = $scope.searchItems.filter(function(value, indexData, arr){
+
+                return indexData != index;
+            
+            });
+
+            $scope.searchItems = filtered
+            
         }
 
         $scope.changeType = function() {
