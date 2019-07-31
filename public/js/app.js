@@ -1922,6 +1922,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         $scope.itemsIndex = []
         $scope.itemsType = [{"id": "*", "label": "*"}]
         $scope.itemsField = []
+        $scope.searchFieldOfCurrentType = []
         // $scope.helloworld = $sce.trustAsHtml('<div class="col-lg-2 col-md-2 form-group">\
         //                                         <select class="form-control">\
         //                                             <option value="must" selected>must</option>\
@@ -1986,7 +1987,14 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
 
                         //render list search field
                         arr_data = $scope.getPath(data)
-                        var listSearchField = []
+                        var listSearchField = [{
+                            id: "match_all",
+                            label: "match_all"
+                        }, {
+                            id: "_all",
+                            label: "_all"
+                        }]
+
                         var re = RegExp($scope.indexSelected.id + ".mappings.", 'g');
                         for (var i = 0; i < arr_data.length; i++) {
                             arr_data[i] = arr_data[i].replace(/properties./g, "");
@@ -2002,6 +2010,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                             })
                         }
 
+                        $scope.searchFieldOfCurrentType = listSearchField
                         $scope.searchItems[0].search_field = listSearchField
                         $scope.searchItems[0].search_field_selected = $scope.searchItems[0].search_field[0]
 
@@ -2038,6 +2047,9 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                             }
                         ]
                         $scope.searchItems[0].search_type_selected = $scope.searchItems[0].search_type[0]
+                        $scope.searchItems[0].is_hidden_search_type = true
+                        $scope.searchItems[0].search_value = ""
+                        $scope.searchItems[0].is_hidden_search_value = true
                     },
                     function(error) {
 
@@ -2057,9 +2069,35 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         }
 
         $scope.plusSearchField = function(data) {
-            var clone = JSON.parse(JSON.stringify($scope.searchItems[0]));
+            var defaultSearch = {
+                "query_bool": [{
+                    id: "must",
+                    label: "must"
+                } , {
+                    id: "must_not",
+                    label: "must_not"
+                } , {
+                    id: "should",
+                    label: "should"
+                }],
+                "search_field": [{
+                    id: "match_all",
+                    label: "match_all"
+                }, {
+                    id: "_all",
+                    label: "_all"
+                }]
+            }
+            
+            defaultSearch.search_field = $scope.searchFieldOfCurrentType
+            defaultSearch.search_field_selected = defaultSearch.search_field[0]
+            defaultSearch.query_bool_selected = defaultSearch.query_bool[0]
 
-            $scope.searchItems.push(clone)
+            defaultSearch.is_hidden_search_type = true
+            defaultSearch.search_value = ""
+            defaultSearch.is_hidden_search_value = true
+
+            $scope.searchItems.push(defaultSearch)
         }
 
         $scope.minusSearchField = function(index) {
@@ -2075,31 +2113,47 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         }
 
         $scope.changeType = function() {
+            $scope.searchItems = []
+
             OverviewDataService.getIndexMapping($scope.indexSelected.id,
                 function(data) {
-                    $scope.itemsField = [{
+                    var listField = [{
                         id: "match_all",
                         label: "match_all"
                     }, {
                         id: "_all",
                         label: "_all"
                     }]
-                    var arr_data = $scope.getPath(data[$scope.indexSelected.id]["mappings"][$scope.typeSelected.id])
 
-                    for (var i = 0; i < arr_data.length; i++) {
-                        arr_data[i] = arr_data[i].replace(/properties./g, "");
-                        arr_data[i] = arr_data[i].replace(/.type/g, "");
+                    var arr_data = []
+                    if ($scope.typeSelected.id == "*") {
+                        arr_data = $scope.getPath(data)
+
+                        var re = RegExp($scope.indexSelected.id + ".mappings.", 'g');
+                        for (var i = 0; i < arr_data.length; i++) {
+                            arr_data[i] = arr_data[i].replace(/properties./g, "");
+                            arr_data[i] = arr_data[i].replace(/.type/g, "");
+                            arr_data[i] = arr_data[i].replace(re, "");
+                        }
+                    } else {
+                        arr_data = $scope.getPath(data[$scope.indexSelected.id]["mappings"][$scope.typeSelected.id])
+
+                        for (var i = 0; i < arr_data.length; i++) {
+                            arr_data[i] = arr_data[i].replace(/properties./g, "");
+                            arr_data[i] = arr_data[i].replace(/.type/g, "");
+                        }
                     }
                     
                     // var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
                     for (var i = 0; i < arr_data.length; i++) {
-                        $scope.itemsField.push({
+                        listField.push({
                             id: arr_data[i],
                             label: arr_data[i]
                         })
                     }
 
-                    $scope.fieldSelected = $scope.itemsField[0]
+                    $scope.searchFieldOfCurrentType = listField
+                    $scope.plusSearchField()
                 },
                 function(error) {
 
