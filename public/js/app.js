@@ -2061,6 +2061,91 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
         );
 
         $scope.changeIndex = function() {
+            $scope.itemsType = [{"id": "*", "label": "*"}]
+
+            OverviewDataService.getIndexMapping($scope.indexSelected.id,
+                function(data) {
+                    //render list type
+                    var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
+                    for (var i = 0; i < arr_data.length; i++) {
+                        $scope.itemsType.push({
+                            id: arr_data[i],
+                            label: arr_data[i]
+                        })
+                    }
+
+                    $scope.typeSelected = $scope.itemsType[0]
+
+
+                    //render list search field
+                    arr_data = $scope.getPath(data)
+                    var listSearchField = [{
+                        id: "match_all",
+                        label: "match_all"
+                    }, {
+                        id: "_all",
+                        label: "_all"
+                    }]
+
+                    var re = RegExp($scope.indexSelected.id + ".mappings.", 'g');
+                    for (var i = 0; i < arr_data.length; i++) {
+                        arr_data[i] = arr_data[i].replace(/properties./g, "");
+                        arr_data[i] = arr_data[i].replace(/.type/g, "");
+                        arr_data[i] = arr_data[i].replace(re, "");
+                    }
+                    
+                    // var arr_data = Object.keys(data[$scope.indexSelected.id]["mappings"])
+                    for (var i = 0; i < arr_data.length; i++) {
+                        listSearchField.push({
+                            id: arr_data[i],
+                            label: arr_data[i]
+                        })
+                    }
+
+                    $scope.searchFieldOfCurrentType = listSearchField
+                    $scope.searchItems[0].search_field = listSearchField
+                    $scope.searchItems[0].search_field_selected = $scope.searchItems[0].search_field[0]
+
+                    $scope.searchItems[0].search_type = [{
+                            id: "match",
+                            label: "match"
+                        } , {
+                            id: "term",
+                            label: "term"
+                        } , {
+                            id: "wildcard",
+                            label: "wildcard"
+                        } , {
+                            id: "wildcard",
+                            label: "wildcard"
+                        } , {
+                            id: "prefix",
+                            label: "prefix"
+                        } , {
+                            id: "fuzzy",
+                            label: "fuzzy"
+                        } , {
+                            id: "range",
+                            label: "range"
+                        } , {
+                            id: "query_string",
+                            label: "query_string"
+                        } , {
+                            id: "text",
+                            label: "text"
+                        } , {
+                            id: "missing",
+                            label: "missing"
+                        }
+                    ]
+                    $scope.searchItems[0].search_type_selected = $scope.searchItems[0].search_type[0]
+                    $scope.searchItems[0].is_hidden_search_type = true
+                    $scope.searchItems[0].search_value = ""
+                    $scope.searchItems[0].is_hidden_search_value = true
+                },
+                function(error) {
+
+            });
             $scope.changeType()
         }
 
