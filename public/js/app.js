@@ -1969,7 +1969,7 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
                     })
                 }
 
-                $scope.indexSelected = $scope.itemsIndex[2];
+                $scope.indexSelected = $scope.itemsIndex[0];
 
                 OverviewDataService.getIndexMapping($scope.indexSelected.id,
                     function(data) {
