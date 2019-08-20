@@ -38,7 +38,7 @@
             </div>
             
             <div class="col-lg-2 col-md-3 form-group">
-                <select ng-options="item as item.label for item in searchItem.search_field track by item.id" ng-model="searchItem.search_field_selected" class="form-control" ng-change="updateField()"></select>
+                <select ng-options="item as item.label for item in searchItem.search_field track by item.id" ng-model="searchItem.search_field_selected" class="form-control" ng-change="changeSearchField($index)"></select>
             </div>
 
             <div class="col-lg-2 col-md-3 form-group" ng-if="!searchItem.is_hidden_search_type">

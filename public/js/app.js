@@ -2197,6 +2197,62 @@ angular.module('cerebro').controller('StructQueryController', ['$scope', '$http'
             
         }
 
+        $scope.changeSearchField = function(searchItemIndex) {
+            var searchFieldSelected = $scope.searchItems[searchItemIndex].search_field_selected.id
+            if (searchFieldSelected === "match_all") {
+                $scope.searchItems[searchItemIndex].is_hidden_search_type = true
+                $scope.searchItems[searchItemIndex].is_hidden_search_value = true
+                $scope.searchItems[searchItemIndex].search_type_selected = null
+            }
+            else if (searchFieldSelected === "_all") {
+                $scope.searchItems[searchItemIndex].search_type = [{
+                    id: "query_string",
+                    label: "query_string"
+                }
+                ]   
+
+                $scope.searchItems[searchItemIndex].is_hidden_search_type = false
+                $scope.searchItems[searchItemIndex].is_hidden_search_value = false
+                $scope.searchItems[searchItemIndex].search_type_selected = $scope.searchItems[searchItemIndex].search_type[0]
+            } else {
+                $scope.searchItems[searchItemIndex].search_type = [{
+                    id: "match",
+                    label: "match"
+                } , {
+                    id: "term",
+                    label: "term"
+                } , {
+                    id: "wildcard",
+                    label: "wildcard"
+                } , {
+                    id: "wildcard",
+                    label: "wildcard"
+                } , {
+                    id: "prefix",
+                    label: "prefix"
+                } , {
+                    id: "fuzzy",
+                    label: "fuzzy"
+                } , {
+                    id: "range",
+                    label: "range"
+                } , {
+                    id: "query_string",
+                    label: "query_string"
+                } , {
+                    id: "text",
+                    label: "text"
+                } , {
+                    id: "missing",
+                    label: "missing"
+                }]   
+
+                $scope.searchItems[searchItemIndex].is_hidden_search_type = false
+                $scope.searchItems[searchItemIndex].is_hidden_search_value = false
+                $scope.searchItems[searchItemIndex].search_type_selected = $scope.searchItems[searchItemIndex].search_type[0]
+            }
+        }
+
         $scope.changeType = function() {
             $scope.searchItems = []
 
